@@ -1,0 +1,18 @@
+.bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.line-right {
+  border-right: 1px solid black;
+  width: 100%;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}

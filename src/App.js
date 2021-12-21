@@ -1,15 +1,16 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { OnDuty, PatientData, Signup, Welcome } from "./pages";
+import { OnDuty, PatientDatabase, Signup, Welcome } from "./pages";
+import { NavBar } from "./components";
 
 function App() {
   return (
     <div className='App'>
+      <NavBar />
       <Routes>
         <Route path='/signup' element={<Signup />} />
         <Route path='/onduty' element={<OnDuty />} />
-        <Route path='/database' element={<PatientData />} />
+        <Route path='/database' element={<PatientDatabase />} />
         <Route path='/' element={<Welcome />} />
       </Routes>
     </div>
