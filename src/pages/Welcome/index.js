@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import { OpenClose } from "../../components";
 import "./styles.css";
 
 export const Welcome = () => {
   return (
     <div>
       <h1>Welcome to AMS GP</h1>
-      <div></div>
+      <OpenClose />
       <div className='button-container'>
         <Link to='/onduty' className='link'>
           <button className='button'>Who is on duty?</button>
