@@ -6,6 +6,7 @@ input,
 select {
   min-width: 250px;
 }
+
 button {
   margin-top: 20px;
   background-color: transparent;

@@ -16,7 +16,6 @@ export const NavBar = () => {
       <div className='line-right'>
         <NavLink
           to='/onduty'
-          exact
           className='links'
           style={({ isActive }) => ({
             fontWeight: isActive && "bold",

@@ -12,7 +12,6 @@ export const OnDuty = () => {
         const response = await axios.get(
           "https://my-json-server.typicode.com/Codaisseur/patient-doctor-data/doctors"
         );
-        console.log(response);
         setDoctors(response.data);
       } catch (e) {
         console.log(e.message);
@@ -21,7 +20,6 @@ export const OnDuty = () => {
     fetchDoctors();
   }, []);
 
-  console.log(doctors);
   return (
     <div>
       <h1>Who is on duty?</h1>
