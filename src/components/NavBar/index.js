@@ -8,7 +8,6 @@ export const NavBar = () => {
         <NavLink
           to='/'
           className='links'
-          exact
           style={({ isActive }) => ({ fontWeight: isActive && "bold" })}
         >
           Home

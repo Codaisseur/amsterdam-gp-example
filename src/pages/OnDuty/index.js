@@ -25,21 +25,24 @@ export const OnDuty = () => {
   return (
     <div>
       <h1>Who is on duty?</h1>
-      {!doctors.length && <b>Loading...</b>}
-      <div className='table-container'>
-        <table>
-          <tr>
-            <th>Doctor</th>
-            <th>Availability</th>
-          </tr>
-          {doctors.map((d) => (
+      {!doctors.length ? (
+        <b>Loading...</b>
+      ) : (
+        <div className='table-container'>
+          <table>
             <tr>
-              <td>{d.doctor}</td>
-              <td>{d.onDuty ? "on duty" : "off duty"}</td>
+              <th>Doctor</th>
+              <th>Availability</th>
             </tr>
-          ))}
-        </table>
-      </div>
+            {doctors.map((d) => (
+              <tr>
+                <td>{d.doctor}</td>
+                <td>{d.onDuty ? "on duty" : "off duty"}</td>
+              </tr>
+            ))}
+          </table>
+        </div>
+      )}
       <OpenClose />
     </div>
   );

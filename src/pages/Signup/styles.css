@@ -1,0 +1,27 @@
+form {
+  min-width: 380px;
+}
+
+input,
+select {
+  min-width: 250px;
+}
+button {
+  margin-top: 20px;
+  background-color: transparent;
+  height: 30px;
+  width: 80px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
