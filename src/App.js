@@ -1,6 +1,12 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { OnDuty, PatientDatabase, Signup, Welcome } from "./pages";
+import {
+  OnDuty,
+  PatientDatabase,
+  Signup,
+  Welcome,
+  PatientDetails,
+} from "./pages";
 import { NavBar } from "./components";
 
 function App() {
@@ -11,6 +17,7 @@ function App() {
         <Route path='/signup' element={<Signup />} />
         <Route path='/onduty' element={<OnDuty />} />
         <Route path='/database' element={<PatientDatabase />} />
+        <Route path='/patients/:id' element={<PatientDetails />} />
         <Route path='/' element={<Welcome />} />
       </Routes>
     </div>
